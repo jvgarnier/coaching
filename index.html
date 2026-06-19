@@ -19,8 +19,8 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a href="#top" class="brand" aria-label="Jean-Victor Garnier — accueil">
-        <span class="brand-mark">JVG</span>
-        <span class="brand-name">Jean-Victor Garnier</span>
+        <span class="brand-mark" id="brand-mark"></span>
+        <span class="brand-name" id="brand-name"></span>
       </a>
 
       <nav class="nav" aria-label="Navigation principale">
@@ -46,24 +46,15 @@
     <section class="hero" id="hero">
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="container hero-inner">
-        <p class="eyebrow reveal">Mentorat &amp; partage d'expérience</p>
-        <h1 class="hero-title reveal">L'expérience d'un dirigeant qui est passé par chaque étape, partagée avec vous.</h1>
-        <p class="hero-lead reveal">
-          J'accompagne les dirigeant·e·s de PME et de start-up qui veulent franchir un cap —
-          de la création à la cession. Sans recettes toutes faites : simplement en partageant
-          ce que quinze années à bâtir, financer et céder une entreprise m'ont appris.
-        </p>
+        <p class="eyebrow reveal" id="hero-eyebrow"></p>
+        <h1 class="hero-title reveal" id="hero-title"></h1>
+        <p class="hero-lead reveal" id="hero-lead"></p>
         <div class="hero-actions reveal">
-          <a href="#contact" class="btn btn-primary">Réserver un échange</a>
-          <a href="#parcours" class="btn btn-ghost">Découvrir mon parcours</a>
+          <a href="#contact" class="btn btn-primary" id="hero-cta-primary"></a>
+          <a href="#parcours" class="btn btn-ghost" id="hero-cta-ghost"></a>
         </div>
 
-        <ul class="hero-stats reveal" aria-label="Chiffres clés du parcours">
-          <li><strong>1 → 350</strong><span>collaborateurs en 15 ans</span></li>
-          <li><strong>37 M€</strong><span>de chiffre d'affaires</span></li>
-          <li><strong>~12 %</strong><span>d'EBITDA</span></li>
-          <li><strong>2007–2021</strong><span>à la tête d'une ESN</span></li>
-        </ul>
+        <ul class="hero-stats reveal" id="hero-stats" aria-label="Chiffres clés du parcours"></ul>
       </div>
     </section>
 
@@ -71,25 +62,15 @@
     <section class="section" id="mentor">
       <div class="container mentor-grid">
         <div class="mentor-portrait reveal">
-          <img src="assets/jean-victor.jpg" alt="Portrait de Jean-Victor Garnier"
+          <img id="mentor-img" src="assets/jean-victor.jpg" alt="Portrait de Jean-Victor Garnier"
                width="1354" height="2030"
                onerror="this.onerror=null;this.src='assets/portrait-placeholder.svg';" />
         </div>
         <div class="mentor-text">
-          <p class="eyebrow reveal">Le mentor</p>
-          <h2 class="reveal">Un entrepreneur qui a vécu chaque étape, à vos côtés.</h2>
-          <p class="reveal">
-            Pendant quinze ans, j'ai dirigé une entreprise de services du numérique (ESN) et
-            l'ai menée de un à plus de 350 collaborateurs. J'ai affronté toutes les facettes
-            du développement d'une société : la création, la structuration, la croissance,
-            le financement, l'international, les acquisitions, jusqu'à la cession à un groupe coté.
-          </p>
-          <p class="reveal">
-            Mon mentorat n'est pas théorique. Il vous apporte le recul d'un dirigeant qui a
-            pris les mêmes décisions que vous, traversé les mêmes doutes, et qui met aujourd'hui
-            cette expérience — et un écosystème éprouvé — au service de votre réussite.
-          </p>
-          <a href="#contact" class="btn btn-primary reveal">Échanger avec moi</a>
+          <p class="eyebrow reveal" id="mentor-eyebrow"></p>
+          <h2 class="reveal" id="mentor-title"></h2>
+          <div id="mentor-paragraphs"></div>
+          <a href="#contact" class="btn btn-primary reveal" id="mentor-cta"></a>
         </div>
       </div>
     </section>
@@ -98,45 +79,13 @@
     <section class="section section-dark" id="parcours">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow reveal">Mon parcours entrepreneurial</p>
-          <h2 class="reveal">Quinze ans à construire une entreprise, de la première embauche à la cession.</h2>
+          <p class="eyebrow reveal" id="parcours-eyebrow"></p>
+          <h2 class="reveal" id="parcours-title"></h2>
         </div>
 
-        <div class="stat-band reveal" aria-label="Chiffres clés">
-          <div class="stat"><strong>37 M€</strong><span>Chiffre d'affaires</span></div>
-          <div class="stat"><strong>~12 %</strong><span>EBITDA</span></div>
-          <div class="stat"><strong>300–350</strong><span>Collaborateurs</span></div>
-          <div class="stat"><strong>1 → 350</strong><span>En 15 ans</span></div>
-          <div class="stat"><strong>2007–2021</strong><span>À la barre</span></div>
-        </div>
+        <div class="stat-band reveal" id="parcours-stats" aria-label="Chiffres clés"></div>
 
-        <div class="facets-grid">
-          <article class="facet reveal">
-            <span class="facet-num">01</span>
-            <h3>Création &amp; développement</h3>
-            <p>Bâtir une ESN à partir d'un seul salarié et la faire grandir jusqu'à plus de 350 collaborateurs, à toutes les étapes de maturité.</p>
-          </article>
-          <article class="facet reveal">
-            <span class="facet-num">02</span>
-            <h3>Développement international</h3>
-            <p>Ouvrir l'entreprise à l'international et structurer son déploiement au-delà des frontières.</p>
-          </article>
-          <article class="facet reveal">
-            <span class="facet-num">03</span>
-            <h3>Croissances externes</h3>
-            <p>Identifier, négocier et intégrer des acquisitions pour accélérer la croissance.</p>
-          </article>
-          <article class="facet reveal">
-            <span class="facet-num">04</span>
-            <h3>LBO</h3>
-            <p>Mener une opération de LBO et piloter l'entreprise dans une logique de création de valeur actionnariale.</p>
-          </article>
-          <article class="facet reveal">
-            <span class="facet-num">05</span>
-            <h3>Cession à un groupe coté</h3>
-            <p>Conclure la cession de l'entreprise à un groupe français coté — l'aboutissement d'un cycle entrepreneurial complet.</p>
-          </article>
-        </div>
+        <div class="facets-grid" id="parcours-facets"></div>
       </div>
     </section>
 
@@ -144,24 +93,11 @@
     <section class="section" id="pour-qui">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow reveal">Pour qui ?</p>
-          <h2 class="reveal">Un mentorat pensé pour les dirigeant·e·s qui veulent passer un cap.</h2>
+          <p class="eyebrow reveal" id="pourqui-eyebrow"></p>
+          <h2 class="reveal" id="pourqui-title"></h2>
         </div>
 
-        <div class="audience-grid">
-          <article class="audience-card reveal">
-            <h3>Dirigeant·e·s de PME &amp; start-up</h3>
-            <p>Fondateurs et fondatrices, CEO et dirigeant·e·s qui pilotent la croissance de leur entreprise.</p>
-          </article>
-          <article class="audience-card reveal">
-            <h3>Tech &amp; services aux entreprises</h3>
-            <p>Les secteurs de la tech et, plus largement, des services aux entreprises — mon terrain de jeu.</p>
-          </article>
-          <article class="audience-card reveal">
-            <h3>Majoritairement B2B</h3>
-            <p>Une dominante B2B, sans exclure les modèles B2C lorsqu'ils s'inscrivent dans cette dynamique.</p>
-          </article>
-        </div>
+        <div class="audience-grid" id="pourqui-cards"></div>
       </div>
     </section>
 
@@ -169,124 +105,12 @@
     <section class="section section-soft" id="domaines">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow reveal">Domaines de coaching</p>
-          <h2 class="reveal">Couvrir chaque dimension de votre aventure entrepreneuriale.</h2>
-          <p class="section-intro reveal">
-            De la première question à se poser avant de créer, jusqu'au pilotage fin de la croissance :
-            un accompagnement complet, structuré par grands volets.
-          </p>
+          <p class="eyebrow reveal" id="domaines-eyebrow"></p>
+          <h2 class="reveal" id="domaines-title"></h2>
+          <p class="section-intro reveal" id="domaines-intro"></p>
         </div>
 
-        <div class="domains-grid">
-
-          <article class="domain-card reveal">
-            <h3>Avant de se lancer</h3>
-            <ul>
-              <li>Les bonnes questions à se poser avant de créer</li>
-              <li>Être entrepreneur et ses impacts (seul ou à plusieurs ?)</li>
-              <li>Association entre associés</li>
-              <li>Statuts &amp; pacte, vision, mission, valeurs</li>
-              <li>Statut fiscal et social du dirigeant et rémunération</li>
-              <li>Choisir une bonne banque</li>
-            </ul>
-          </article>
-
-          <article class="domain-card reveal">
-            <h3>Patrimonial du dirigeant</h3>
-            <ul>
-              <li>Structuration juridique et patrimoniale</li>
-              <li>Bien détenir ses parts</li>
-              <li>Contrat de mariage</li>
-              <li>Vente et transmission futures</li>
-            </ul>
-          </article>
-
-          <article class="domain-card reveal">
-            <h3>Offre &amp; marché</h3>
-            <ul>
-              <li>Proposition de valeur : produit, service, procédé</li>
-              <li>Roadmap produit</li>
-              <li>Marché cible : définition, taille, tendances</li>
-              <li>Étude de la concurrence &amp; avantages concurrentiels</li>
-              <li>Stratégie d'acquisition (directe / indirecte)</li>
-              <li>Modèle économique &amp; part de marché</li>
-            </ul>
-          </article>
-
-          <article class="domain-card reveal">
-            <h3>Financer &amp; piloter</h3>
-            <ul>
-              <li>Financements publics et privés (dilutifs / non dilutifs)</li>
-              <li>Réussir sa levée de fonds &amp; son pitch deck</li>
-              <li>CIR, CII, JEI, CIRCo</li>
-              <li>Prévisionnel financier &amp; rentabilité</li>
-              <li>Plan de financement, compte de résultat, trésorerie</li>
-              <li>Tableau de bord de pilotage &amp; KPI</li>
-            </ul>
-          </article>
-
-          <article class="domain-card reveal">
-            <h3>Équipe</h3>
-            <ul>
-              <li>Comment et où bien recruter ?</li>
-              <li>Management package : BSA, BSPCE, actions gratuites</li>
-              <li>Fidéliser les talents</li>
-              <li>Marque employeur &amp; politique RSE</li>
-              <li>Contrat de travail, clauses et rémunération</li>
-              <li>Contraintes administratives et contrôles</li>
-            </ul>
-          </article>
-
-          <article class="domain-card reveal">
-            <h3>PI &amp; réglementaire</h3>
-            <ul>
-              <li>Marques et noms de domaine</li>
-              <li>Brevets et dépôts de code</li>
-              <li>Secret des affaires</li>
-              <li>Cadre réglementaire</li>
-            </ul>
-          </article>
-
-          <article class="domain-card reveal">
-            <h3>Croissance</h3>
-            <ul>
-              <li>International : pourquoi y aller ?</li>
-              <li>International : comment (VIE…) ?</li>
-              <li>Croissance externe : cibler et négocier</li>
-              <li>Intégrer une acquisition</li>
-            </ul>
-          </article>
-
-          <article class="domain-card reveal">
-            <h3>Système d'information &amp; cybersécurité</h3>
-            <ul>
-              <li>Kit de démarrage de votre SI</li>
-              <li>Préserver et sécuriser son SI</li>
-              <li>Bons réflexes de cybersécurité</li>
-            </ul>
-          </article>
-
-          <article class="domain-card reveal">
-            <h3>Rayonner</h3>
-            <ul>
-              <li>Personal branding &amp; identité de marque</li>
-              <li>SEO, Google Ads, réseaux sociaux</li>
-              <li>Stratégie d'influence</li>
-              <li>Communication &amp; marketing</li>
-            </ul>
-          </article>
-
-          <article class="domain-card reveal">
-            <h3>L'humain</h3>
-            <ul>
-              <li>Le sommeil, facteur de performance professionnelle</li>
-              <li>Le sport, moteur d'énergie et de clarté</li>
-              <li>Santé et bien-être du dirigeant</li>
-              <li>Tenir dans la durée</li>
-            </ul>
-          </article>
-
-        </div>
+        <div class="domains-grid" id="domaines-cards"></div>
       </div>
     </section>
 
@@ -294,37 +118,14 @@
     <section class="section section-dark" id="ecosysteme">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow reveal">L'écosystème</p>
-          <h2 class="reveal">Les partenaires que j'ai éprouvés, à vos côtés.</h2>
-          <p class="section-intro reveal">
-            Je ne prétends pas vous présenter « les meilleurs du marché ». Je partage simplement
-            les acteurs que j'ai moi-même utilisés au fil de mon parcours, que je connais, qui se
-            sont montrés fiables et performants — et avec qui vous pourrez avancer en confiance.
-            Je transmets ces contacts <strong>sans aucun lien économique</strong>, en toute transparence.
-          </p>
+          <p class="eyebrow reveal" id="eco-eyebrow"></p>
+          <h2 class="reveal" id="eco-title"></h2>
+          <p class="section-intro reveal" id="eco-intro"></p>
         </div>
 
-        <div class="eco-grid">
-          <div class="eco-tag reveal">Notaires</div>
-          <div class="eco-tag reveal">Experts-comptables</div>
-          <div class="eco-tag reveal">Avocats d'affaires</div>
-          <div class="eco-tag reveal">Avocats fiscalistes</div>
-          <div class="eco-tag reveal">Banques</div>
-          <div class="eco-tag reveal">Fonds d'investissement</div>
-          <div class="eco-tag reveal">Conseil en M&amp;A</div>
-          <div class="eco-tag reveal">Conseil en stratégie</div>
-          <div class="eco-tag reveal">Financement de l'innovation</div>
-          <div class="eco-tag reveal">Recrutement &amp; RH</div>
-          <div class="eco-tag reveal">Branding, web &amp; SEO</div>
-          <div class="eco-tag reveal">Cabinets PI</div>
-          <div class="eco-tag reveal">BPIFrance</div>
-          <div class="eco-tag reveal">Boîtes de développement</div>
-        </div>
+        <div class="eco-grid" id="eco-tags"></div>
 
-        <p class="eco-note reveal">
-          Aucune commission, aucun lien commercial : seulement des contacts que j'ai moi-même
-          éprouvés, partagés en toute honnêteté.
-        </p>
+        <p class="eco-note reveal" id="eco-note"></p>
       </div>
     </section>
 
@@ -332,41 +133,12 @@
     <section class="section section-soft" id="temoignages">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow reveal">Témoignages</p>
-          <h2 class="reveal">Ils ont avancé à mes côtés.</h2>
-          <p class="section-intro reveal">
-            La parole à celles et ceux que j'ai accompagnés.
-          </p>
+          <p class="eyebrow reveal" id="temoignages-eyebrow"></p>
+          <h2 class="reveal" id="temoignages-title"></h2>
+          <p class="section-intro reveal" id="temoignages-intro"></p>
         </div>
 
-        <div class="testimonials-grid">
-          <figure class="testimonial reveal">
-            <span class="quote-mark" aria-hidden="true">&ldquo;</span>
-            <blockquote>Témoignage à venir. Cet espace accueillera le retour d'un·e dirigeant·e accompagné·e par Jean-Victor.</blockquote>
-            <figcaption>
-              <span class="t-name">Prénom Nom</span>
-              <span class="t-role">Fonction · Entreprise</span>
-            </figcaption>
-          </figure>
-
-          <figure class="testimonial reveal">
-            <span class="quote-mark" aria-hidden="true">&ldquo;</span>
-            <blockquote>Témoignage à venir. Cet espace accueillera le retour d'un·e dirigeant·e accompagné·e par Jean-Victor.</blockquote>
-            <figcaption>
-              <span class="t-name">Prénom Nom</span>
-              <span class="t-role">Fonction · Entreprise</span>
-            </figcaption>
-          </figure>
-
-          <figure class="testimonial reveal">
-            <span class="quote-mark" aria-hidden="true">&ldquo;</span>
-            <blockquote>Témoignage à venir. Cet espace accueillera le retour d'un·e dirigeant·e accompagné·e par Jean-Victor.</blockquote>
-            <figcaption>
-              <span class="t-name">Prénom Nom</span>
-              <span class="t-role">Fonction · Entreprise</span>
-            </figcaption>
-          </figure>
-        </div>
+        <div class="testimonials-grid" id="temoignages-items"></div>
       </div>
     </section>
 
@@ -374,22 +146,19 @@
     <section class="section" id="contact">
       <div class="container contact-grid">
         <div class="contact-text">
-          <p class="eyebrow reveal">Entrons en contact</p>
-          <h2 class="reveal">Réservons un premier échange.</h2>
-          <p class="reveal">
-            Un appel de découverte, sans engagement, pour comprendre vos enjeux et voir comment
-            mon accompagnement peut accélérer votre trajectoire.
-          </p>
+          <p class="eyebrow reveal" id="contact-eyebrow"></p>
+          <h2 class="reveal" id="contact-title"></h2>
+          <p class="reveal" id="contact-text"></p>
 
           <div class="booking-placeholder reveal" id="booking">
-            <p class="booking-title">Prise de rendez-vous</p>
-            <p class="booking-desc">L'agenda de réservation en ligne sera intégré ici.</p>
-            <a href="#contact-form" class="btn btn-primary">Demander un échange</a>
+            <p class="booking-title" id="booking-title"></p>
+            <p class="booking-desc" id="booking-desc"></p>
+            <a href="#contact-form" class="btn btn-primary" id="booking-cta"></a>
           </div>
 
           <ul class="contact-coords reveal">
-            <li><span>Email</span><a href="mailto:contact@example.com">contact@example.com</a></li>
-            <li><span>LinkedIn</span><a href="#">Profil à renseigner</a></li>
+            <li><span>Email</span><a id="contact-email" href="mailto:contact@example.com"></a></li>
+            <li><span>LinkedIn</span><a id="contact-linkedin" href="#"></a></li>
           </ul>
         </div>
 
@@ -426,8 +195,8 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="brand-mark">JVG</span>
-        <p>Jean-Victor Garnier — Mentorat &amp; partage d'expérience pour entrepreneurs.</p>
+        <span class="brand-mark" id="footer-mark"></span>
+        <p id="footer-tagline"></p>
       </div>
       <nav class="footer-nav" aria-label="Pied de page">
         <a href="#mentor">Le mentor</a>
@@ -442,5 +211,20 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/render.js"></script>
+
+  <!-- Netlify Identity : gère la confirmation des invitations puis renvoie vers l'admin -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function (user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function () {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>

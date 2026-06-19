@@ -1,5 +1,6 @@
 /* Jean-Victor Garnier — interactions */
-(function () {
+/* Appelée par render.js une fois le contenu injecté dans le DOM. */
+window.initSiteInteractions = function () {
   "use strict";
 
   /* ----- Année dans le footer ----- */
@@ -96,4 +97,4 @@
         });
     });
   }
-})();
+};

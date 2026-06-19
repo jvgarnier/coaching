@@ -1,0 +1,184 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Permet de tester l'admin en local avec `npx decap-server` (voir README).
+local_backend: true
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+locale: "fr"
+
+collections:
+  - name: "site"
+    label: "Contenu du site"
+    files:
+      - name: "accueil"
+        label: "Page d'accueil"
+        file: "content/site.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Marque"
+            name: "brand"
+            widget: "object"
+            fields:
+              - { label: "Sigle (ex. JVG)", name: "mark", widget: "string" }
+              - { label: "Nom complet", name: "name", widget: "string" }
+
+          - label: "Hero (haut de page)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Sur-titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre", name: "title", widget: "text" }
+              - { label: "Texte d'accroche", name: "lead", widget: "text" }
+              - label: "Bouton principal"
+                name: "ctaPrimary"
+                widget: "object"
+                fields:
+                  - { label: "Libellé", name: "label", widget: "string" }
+                  - { label: "Lien", name: "href", widget: "string" }
+              - label: "Bouton secondaire"
+                name: "ctaGhost"
+                widget: "object"
+                fields:
+                  - { label: "Libellé", name: "label", widget: "string" }
+                  - { label: "Lien", name: "href", widget: "string" }
+              - label: "Chiffres clés"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "Valeur", name: "value", widget: "string" }
+                  - { label: "Légende", name: "label", widget: "string" }
+
+          - label: "Le mentor"
+            name: "mentor"
+            widget: "object"
+            fields:
+              - { label: "Sur-titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre", name: "title", widget: "text" }
+              - { label: "Photo", name: "image", widget: "image" }
+              - { label: "Texte alternatif de la photo", name: "imageAlt", widget: "string", required: false }
+              - label: "Paragraphes"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraphe", name: "paragraph", widget: "text" }
+              - label: "Bouton"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - { label: "Libellé", name: "label", widget: "string" }
+                  - { label: "Lien", name: "href", widget: "string" }
+
+          - label: "Parcours"
+            name: "parcours"
+            widget: "object"
+            fields:
+              - { label: "Sur-titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre", name: "title", widget: "text" }
+              - label: "Chiffres clés"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "Valeur", name: "value", widget: "string" }
+                  - { label: "Légende", name: "label", widget: "string" }
+              - label: "Étapes"
+                name: "facets"
+                widget: "list"
+                fields:
+                  - { label: "Numéro", name: "num", widget: "string" }
+                  - { label: "Titre", name: "title", widget: "string" }
+                  - { label: "Texte", name: "text", widget: "text" }
+
+          - label: "Pour qui ?"
+            name: "pourQui"
+            widget: "object"
+            fields:
+              - { label: "Sur-titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre", name: "title", widget: "text" }
+              - label: "Cartes"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Titre", name: "title", widget: "string" }
+                  - { label: "Texte", name: "text", widget: "text" }
+
+          - label: "Domaines de coaching"
+            name: "domaines"
+            widget: "object"
+            fields:
+              - { label: "Sur-titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre", name: "title", widget: "text" }
+              - { label: "Introduction", name: "intro", widget: "text" }
+              - label: "Cartes"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Titre", name: "title", widget: "string" }
+                  - label: "Éléments de la liste"
+                    name: "items"
+                    widget: "list"
+                    field: { label: "Élément", name: "item", widget: "string" }
+
+          - label: "Écosystème"
+            name: "ecosysteme"
+            widget: "object"
+            fields:
+              - { label: "Sur-titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre", name: "title", widget: "text" }
+              - { label: "Introduction", name: "intro", widget: "text" }
+              - label: "Étiquettes"
+                name: "tags"
+                widget: "list"
+                field: { label: "Étiquette", name: "tag", widget: "string" }
+              - { label: "Note de bas de section", name: "note", widget: "text" }
+
+          - label: "Témoignages"
+            name: "temoignages"
+            widget: "object"
+            fields:
+              - { label: "Sur-titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre", name: "title", widget: "text" }
+              - { label: "Introduction", name: "intro", widget: "text" }
+              - label: "Témoignages"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Citation", name: "quote", widget: "text" }
+                  - { label: "Nom", name: "name", widget: "string" }
+                  - { label: "Fonction · Entreprise", name: "role", widget: "string" }
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Sur-titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre", name: "title", widget: "text" }
+              - { label: "Texte", name: "text", widget: "text" }
+              - label: "Encart prise de rendez-vous"
+                name: "booking"
+                widget: "object"
+                fields:
+                  - { label: "Titre", name: "title", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "text" }
+                  - label: "Bouton"
+                    name: "cta"
+                    widget: "object"
+                    fields:
+                      - { label: "Libellé", name: "label", widget: "string" }
+                      - { label: "Lien", name: "href", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - label: "LinkedIn"
+                name: "linkedin"
+                widget: "object"
+                fields:
+                  - { label: "Libellé", name: "label", widget: "string" }
+                  - { label: "Lien", name: "href", widget: "string" }
+
+          - label: "Pied de page"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Phrase de pied de page", name: "tagline", widget: "text" }
