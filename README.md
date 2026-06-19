@@ -28,14 +28,23 @@ L'admin permet de modifier tous les textes et images depuis le navigateur, à l'
 `https://<votre-site>.netlify.app/admin/`. Chaque modification est commitée sur GitHub et
 redéploie automatiquement le site.
 
-### Configuration Netlify (une seule fois)
+### Configuration (une seule fois)
 
-1. Déployer ce repo (`jvgarnier/coaching`) sur Netlify.
-2. Onglet **Identity** → *Enable Identity*.
-3. **Identity → Services → Git Gateway** → *Enable Git Gateway*.
-4. **Identity → Registration** → passer en *Invite only*.
-5. **Identity → Invite users** → s'inviter par email, puis accepter l'invitation reçue
-   (le lien renvoie vers le site et ouvre l'admin pour définir le mot de passe).
+Le site est hébergé sur Netlify (statique) et l'authentification de l'admin passe par
+**DecapBridge** (Netlify Identity étant déprécié). DecapBridge garde un login simple
+par email/mot de passe, sans compte GitHub requis pour les éditeurs.
+
+1. Déployer ce repo (`jvgarnier/coaching`) sur Netlify (déploiement statique, sans build).
+2. Créer un compte sur https://decapbridge.com puis **Add site** :
+   - Provider : **GitHub**, dépôt : `jvgarnier/coaching`, branche `main`
+   - URL de login Decap : `https://<votre-site>.netlify.app/admin/`
+   - Fournir un **access token** GitHub avec accès au dépôt (DecapBridge l'explique pas à pas)
+3. DecapBridge génère un bloc `backend:` avec un **identifiant de site**. Reporter cet
+   identifiant dans [`admin/config.yml`](admin/config.yml) en remplaçant `SITE_ID` dans
+   `identity_url: https://auth.decapbridge.com/sites/SITE_ID` (ou coller le bloc fourni
+   tel quel à la place du bloc `backend:` existant).
+4. Dans DecapBridge, onglet **collaborators** → inviter Jean-Victor par email.
+5. Commiter/pousser la modif de `config.yml`, puis aller sur `https://<votre-site>.netlify.app/admin/`.
 
 ### Tester l'admin en local (optionnel)
 

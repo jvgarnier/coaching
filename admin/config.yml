@@ -1,6 +1,18 @@
+# Authentification via DecapBridge (remplace Netlify Identity, déprécié).
+# ⚠️ Remplacer SITE_ID ci-dessous par l'identifiant fourni par DecapBridge
+#    après avoir créé le site sur https://decapbridge.com (voir README).
 backend:
   name: git-gateway
+  repo: jvgarnier/coaching
   branch: main
+  identity_url: https://auth.decapbridge.com/sites/SITE_ID
+  gateway_url: https://gateway.decapbridge.com
+  commit_messages:
+    create: 'Création {{collection}} « {{slug}} » — {{author-name}} via DecapBridge'
+    update: 'Mise à jour {{collection}} « {{slug}} » — {{author-name}} via DecapBridge'
+    delete: 'Suppression {{collection}} « {{slug}} » — {{author-name}} via DecapBridge'
+    uploadMedia: 'Ajout du média « {{path}} » — {{author-name}} via DecapBridge'
+    deleteMedia: 'Suppression du média « {{path}} » — {{author-name}} via DecapBridge'
 
 # Permet de tester l'admin en local avec `npx decap-server` (voir README).
 local_backend: true
