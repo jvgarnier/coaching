@@ -263,24 +263,7 @@
       "label": "Découvrir mon parcours",
       "href": "#parcours"
     },
-    "stats": [
-      {
-        "value": "1 → 350",
-        "label": "collaborateurs en 15 ans"
-      },
-      {
-        "value": "37 M€",
-        "label": "de chiffre d'affaires"
-      },
-      {
-        "value": "~12 %",
-        "label": "d'EBITDA"
-      },
-      {
-        "value": "2007–2021",
-        "label": "à la tête d'une ESN"
-      }
-    ]
+    "stats": []
   },
   "footer": {
     "tagline": "Jean-Victor Garnier — Mentorat & partage d'expérience pour entrepreneurs."
