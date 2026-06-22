@@ -173,7 +173,16 @@
     if (contact.booking) {
       setText("booking-title", contact.booking.title);
       setText("booking-desc", contact.booking.desc);
-      setLink("booking-cta", contact.booking.cta);
+      var embed = $("booking-embed");
+      if (embed && contact.booking.calendarUrl) {
+        clear(embed);
+        var iframe = document.createElement("iframe");
+        iframe.src = contact.booking.calendarUrl;
+        iframe.title = "Prise de rendez-vous";
+        iframe.loading = "lazy";
+        iframe.setAttribute("frameborder", "0");
+        embed.appendChild(iframe);
+      }
     }
     var emailEl = $("contact-email");
     if (emailEl && contact.email) {

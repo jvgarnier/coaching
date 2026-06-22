@@ -94,8 +94,8 @@
     "text": "Un appel de découverte, sans engagement, pour comprendre vos enjeux et voir comment mon accompagnement peut accélérer votre trajectoire.",
     "booking": {
       "title": "Prise de rendez-vous",
-      "desc": "L'agenda de réservation en ligne sera intégré ici.",
-      "cta": { "label": "Demander un échange", "href": "#contact-form" }
+      "desc": "Choisissez directement un créneau dans mon agenda.",
+      "calendarUrl": "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3MEhbbdOf0kFZHT5ncGEpPiIVYvevxo_2irdMG-7ghEPht9JzGF4B73u1wdCG8t01cMDgvZQ0g?gv=true"
     },
     "email": "contact@example.com",
     "linkedin": { "label": "Profil à renseigner", "href": "#" }

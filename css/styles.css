@@ -352,13 +352,21 @@ h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 600; line-height
 .booking-placeholder {
   margin: 30px 0;
   background: var(--cream-200);
-  border: 1px dashed var(--gold);
+  border: 1px solid var(--gold);
   border-radius: var(--radius);
-  padding: 30px;
+  padding: 24px;
   text-align: center;
 }
 .booking-title { font-family: var(--serif); font-size: 20px; margin: 0 0 6px; color: var(--navy); }
-.booking-desc { margin: 0 0 20px; font-size: 14px; color: var(--muted); }
+.booking-desc { margin: 0 0 18px; font-size: 14px; color: var(--muted); }
+.booking-embed iframe {
+  width: 100%;
+  min-height: 600px;
+  border: 0;
+  border-radius: 10px;
+  background: #fff;
+  display: block;
+}
 .contact-coords { display: flex; flex-direction: column; gap: 14px; margin-top: 10px; }
 .contact-coords li { display: flex; gap: 16px; align-items: baseline; }
 .contact-coords span { width: 84px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); }

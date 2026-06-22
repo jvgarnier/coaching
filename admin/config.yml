@@ -175,12 +175,7 @@ collections:
                 fields:
                   - { label: "Titre", name: "title", widget: "string" }
                   - { label: "Description", name: "desc", widget: "text" }
-                  - label: "Bouton"
-                    name: "cta"
-                    widget: "object"
-                    fields:
-                      - { label: "Libellé", name: "label", widget: "string" }
-                      - { label: "Lien", name: "href", widget: "string" }
+                  - { label: "Lien d'intégration de l'agenda Google", name: "calendarUrl", widget: "string" }
               - { label: "Email", name: "email", widget: "string" }
               - label: "LinkedIn"
                 name: "linkedin"
