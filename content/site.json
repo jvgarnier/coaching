@@ -1,7 +1,7 @@
 {
   "contact": {
     "eyebrow": "Entrons en contact",
-    "title": "Réservons un premier échange.",
+    "title": "Engager la conversation",
     "text": "Un appel de découverte, sans engagement, pour comprendre vos enjeux et envisager une collaboration.",
     "booking": {
       "title": "Prise de rendez-vous",
@@ -10,7 +10,7 @@
     },
     "email": "jvgarnier@gmail.com",
     "linkedin": {
-      "label": "Lien : Linkedin",
+      "label": "06 62 86 33 68",
       "href": "Linkedin"
     }
   },
@@ -24,7 +24,7 @@
       "Mon accompagnement n’est pas théorique. Il s’appuie sur l’expérience concrète d’un dirigeant qui a pris des décisions structurantes, connu les moments de doute, s’est parfois trompé, construit un écosystème solide — et met aujourd’hui ce recul au service d’entrepreneur-e-s qui veulent franchir un cap."
     ],
     "cta": {
-      "label": "Réserver un échange",
+      "label": "Engager la conversation",
       "href": "#contact"
     }
   },
