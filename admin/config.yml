@@ -24,7 +24,7 @@ auth:
   avatar_url_claim: avatar_url
 
 logo_url: https://decapbridge.com/decapcms-with-bridge.svg
-site_url: https://rad-palmier-6e3762.netlify.app
+site_url: https://jvgarnier.com
 
 # Permet de tester l'admin en local avec `npx decap-server` (voir README).
 local_backend: true
