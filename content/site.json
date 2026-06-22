@@ -8,16 +8,16 @@
       "desc": "Choisissez directement un créneau dans mon agenda.",
       "calendarUrl": "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3MEhbbdOf0kFZHT5ncGEpPiIVYvevxo_2irdMG-7ghEPht9JzGF4B73u1wdCG8t01cMDgvZQ0g?gv=true"
     },
-    "email": "contact@example.com",
+    "email": "jvgarnier@gmail.com",
     "linkedin": {
-      "label": "Profil à renseigner",
-      "href": "#"
+      "label": "Lien : Linkedin",
+      "href": "Linkedin"
     }
   },
   "mentor": {
     "eyebrow": "Un mentor à vos côtés",
     "title": "Un entrepreneur qui a traversé chaque de la vie d'une entreprise",
-    "image": "assets/jean-victor.jpg",
+    "image": "/assets/uploads/portrait-coaching-jvg.jpeg",
     "imageAlt": "Portrait de Jean-Victor Garnier",
     "paragraphs": [
       "J’ai cofondé et dirigé pendant plus de quinze ans une entreprise de services du numérique (ESN), que j’ai menée de 1 à plus de 350 collaborateurs. De la création à la cession à un groupe coté, j’ai vécu les grandes étapes du développement d’une société : structuration, croissance, financement, internationalisation, acquisitions et transmission.",
