@@ -1,93 +1,4 @@
 {
-  "brand": {
-    "mark": "JVG",
-    "name": "Jean-Victor Garnier"
-  },
-  "hero": {
-    "eyebrow": "Mentorat & partage d'expérience",
-    "title": "L'expérience d'un dirigeant qui est passé par chaque étape, partagée avec vous.",
-    "lead": "J'accompagne les dirigeant·e·s de PME et de start-up qui veulent franchir un cap — de la création à la cession. Sans recettes toutes faites : simplement en partageant ce que quinze années à bâtir, financer et céder une entreprise m'ont appris.",
-    "ctaPrimary": { "label": "Réserver un échange", "href": "#contact" },
-    "ctaGhost": { "label": "Découvrir mon parcours", "href": "#parcours" },
-    "stats": [
-      { "value": "1 → 350", "label": "collaborateurs en 15 ans" },
-      { "value": "37 M€", "label": "de chiffre d'affaires" },
-      { "value": "~12 %", "label": "d'EBITDA" },
-      { "value": "2007–2021", "label": "à la tête d'une ESN" }
-    ]
-  },
-  "mentor": {
-    "eyebrow": "Le mentor",
-    "title": "Un entrepreneur qui a vécu chaque étape, à vos côtés.",
-    "image": "assets/jean-victor.jpg",
-    "imageAlt": "Portrait de Jean-Victor Garnier",
-    "paragraphs": [
-      "Pendant quinze ans, j'ai dirigé une entreprise de services du numérique (ESN) et l'ai menée de un à plus de 350 collaborateurs. J'ai affronté toutes les facettes du développement d'une société : la création, la structuration, la croissance, le financement, l'international, les acquisitions, jusqu'à la cession à un groupe coté.",
-      "Mon mentorat n'est pas théorique. Il vous apporte le recul d'un dirigeant qui a pris les mêmes décisions que vous, traversé les mêmes doutes, et qui met aujourd'hui cette expérience — et un écosystème éprouvé — au service de votre réussite."
-    ],
-    "cta": { "label": "Échanger avec moi", "href": "#contact" }
-  },
-  "parcours": {
-    "eyebrow": "Mon parcours entrepreneurial",
-    "title": "Quinze ans à construire une entreprise, de la première embauche à la cession.",
-    "stats": [
-      { "value": "37 M€", "label": "Chiffre d'affaires" },
-      { "value": "~12 %", "label": "EBITDA" },
-      { "value": "300–350", "label": "Collaborateurs" },
-      { "value": "1 → 350", "label": "En 15 ans" },
-      { "value": "2007–2021", "label": "À la barre" }
-    ],
-    "facets": [
-      { "num": "01", "title": "Création & développement", "text": "Bâtir une ESN à partir d'un seul salarié et la faire grandir jusqu'à plus de 350 collaborateurs, à toutes les étapes de maturité." },
-      { "num": "02", "title": "Développement international", "text": "Ouvrir l'entreprise à l'international et structurer son déploiement au-delà des frontières." },
-      { "num": "03", "title": "Croissances externes", "text": "Identifier, négocier et intégrer des acquisitions pour accélérer la croissance." },
-      { "num": "04", "title": "LBO", "text": "Mener une opération de LBO et piloter l'entreprise dans une logique de création de valeur actionnariale." },
-      { "num": "05", "title": "Cession à un groupe coté", "text": "Conclure la cession de l'entreprise à un groupe français coté — l'aboutissement d'un cycle entrepreneurial complet." }
-    ]
-  },
-  "pourQui": {
-    "eyebrow": "Pour qui ?",
-    "title": "Un mentorat pensé pour les dirigeant·e·s qui veulent passer un cap.",
-    "cards": [
-      { "title": "Dirigeant·e·s de PME & start-up", "text": "Fondateurs et fondatrices, CEO et dirigeant·e·s qui pilotent la croissance de leur entreprise." },
-      { "title": "Tech & services aux entreprises", "text": "Les secteurs de la tech et, plus largement, des services aux entreprises — mon terrain de jeu." },
-      { "title": "Majoritairement B2B", "text": "Une dominante B2B, sans exclure les modèles B2C lorsqu'ils s'inscrivent dans cette dynamique." }
-    ]
-  },
-  "domaines": {
-    "eyebrow": "Domaines de coaching",
-    "title": "Couvrir chaque dimension de votre aventure entrepreneuriale.",
-    "intro": "De la première question à se poser avant de créer, jusqu'au pilotage fin de la croissance : un accompagnement complet, structuré par grands volets.",
-    "cards": [
-      { "title": "Avant de se lancer", "items": ["Les bonnes questions à se poser avant de créer", "Être entrepreneur et ses impacts (seul ou à plusieurs ?)", "Association entre associés", "Statuts & pacte, vision, mission, valeurs", "Statut fiscal et social du dirigeant et rémunération", "Choisir une bonne banque"] },
-      { "title": "Patrimonial du dirigeant", "items": ["Structuration juridique et patrimoniale", "Bien détenir ses parts", "Contrat de mariage", "Vente et transmission futures"] },
-      { "title": "Offre & marché", "items": ["Proposition de valeur : produit, service, procédé", "Roadmap produit", "Marché cible : définition, taille, tendances", "Étude de la concurrence & avantages concurrentiels", "Stratégie d'acquisition (directe / indirecte)", "Modèle économique & part de marché"] },
-      { "title": "Financer & piloter", "items": ["Financements publics et privés (dilutifs / non dilutifs)", "Réussir sa levée de fonds & son pitch deck", "CIR, CII, JEI, CIRCo", "Prévisionnel financier & rentabilité", "Plan de financement, compte de résultat, trésorerie", "Tableau de bord de pilotage & KPI"] },
-      { "title": "Équipe", "items": ["Comment et où bien recruter ?", "Management package : BSA, BSPCE, actions gratuites", "Fidéliser les talents", "Marque employeur & politique RSE", "Contrat de travail, clauses et rémunération", "Contraintes administratives et contrôles"] },
-      { "title": "PI & réglementaire", "items": ["Marques et noms de domaine", "Brevets et dépôts de code", "Secret des affaires", "Cadre réglementaire"] },
-      { "title": "Croissance", "items": ["International : pourquoi y aller ?", "International : comment (VIE…) ?", "Croissance externe : cibler et négocier", "Intégrer une acquisition"] },
-      { "title": "Système d'information & cybersécurité", "items": ["Kit de démarrage de votre SI", "Préserver et sécuriser son SI", "Bons réflexes de cybersécurité"] },
-      { "title": "Rayonner", "items": ["Personal branding & identité de marque", "SEO, Google Ads, réseaux sociaux", "Stratégie d'influence", "Communication & marketing"] },
-      { "title": "L'humain", "items": ["Le sommeil, facteur de performance professionnelle", "Le sport, moteur d'énergie et de clarté", "Santé et bien-être du dirigeant", "Tenir dans la durée"] }
-    ]
-  },
-  "ecosysteme": {
-    "eyebrow": "L'écosystème",
-    "title": "Les partenaires que j'ai éprouvés, à vos côtés.",
-    "intro": "Je ne prétends pas vous présenter « les meilleurs du marché ». Je partage simplement les acteurs que j'ai moi-même utilisés au fil de mon parcours, que je connais, qui se sont montrés fiables et performants — et avec qui vous pourrez avancer en confiance. Je transmets ces contacts sans aucun lien économique, en toute transparence.",
-    "tags": ["Notaires", "Experts-comptables", "Avocats d'affaires", "Avocats fiscalistes", "Banques", "Fonds d'investissement", "Conseil en M&A", "Conseil en stratégie", "Financement de l'innovation", "Recrutement & RH", "Branding, web & SEO", "Cabinets PI", "BPIFrance", "Boîtes de développement"],
-    "note": "Aucune commission, aucun lien commercial : seulement des contacts que j'ai moi-même éprouvés, partagés en toute honnêteté."
-  },
-  "temoignages": {
-    "eyebrow": "Témoignages",
-    "title": "Ils ont avancé à mes côtés.",
-    "intro": "La parole à celles et ceux que j'ai accompagnés.",
-    "items": [
-      { "quote": "Témoignage à venir. Cet espace accueillera le retour d'un·e dirigeant·e accompagné·e par Jean-Victor.", "name": "Prénom Nom", "role": "Fonction · Entreprise" },
-      { "quote": "Témoignage à venir. Cet espace accueillera le retour d'un·e dirigeant·e accompagné·e par Jean-Victor.", "name": "Prénom Nom", "role": "Fonction · Entreprise" },
-      { "quote": "Témoignage à venir. Cet espace accueillera le retour d'un·e dirigeant·e accompagné·e par Jean-Victor.", "name": "Prénom Nom", "role": "Fonction · Entreprise" }
-    ]
-  },
   "contact": {
     "eyebrow": "Entrons en contact",
     "title": "Réservons un premier échange.",
@@ -98,7 +9,278 @@
       "calendarUrl": "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3MEhbbdOf0kFZHT5ncGEpPiIVYvevxo_2irdMG-7ghEPht9JzGF4B73u1wdCG8t01cMDgvZQ0g?gv=true"
     },
     "email": "contact@example.com",
-    "linkedin": { "label": "Profil à renseigner", "href": "#" }
+    "linkedin": {
+      "label": "Profil à renseigner",
+      "href": "#"
+    }
+  },
+  "mentor": {
+    "eyebrow": "Le mentor",
+    "title": "Un entrepreneur qui a vécu chaque étape, à vos côtés.",
+    "image": "assets/jean-victor.jpg",
+    "imageAlt": "Portrait de Jean-Victor Garnier",
+    "paragraphs": [
+      "Pendant quinze ans, j'ai dirigé une entreprise de services du numérique (ESN) et l'ai menée de un à plus de 350 collaborateurs. J'ai affronté toutes les facettes du développement d'une société : la création, la structuration, la croissance, le financement, l'international, les acquisitions, jusqu'à la cession à un groupe coté.",
+      "Mon mentorat n'est pas théorique. Il vous apporte le recul d'un dirigeant qui a pris les mêmes décisions que vous, traversé les mêmes doutes, et qui met aujourd'hui cette expérience — et un écosystème éprouvé — au service de votre réussite."
+    ],
+    "cta": {
+      "label": "Échanger avec moi",
+      "href": "#contact"
+    }
+  },
+  "ecosysteme": {
+    "eyebrow": "L'écosystème",
+    "title": "Les partenaires que j'ai éprouvés, à vos côtés.",
+    "intro": "Je ne prétends pas vous présenter « les meilleurs du marché ». Je partage simplement les acteurs que j'ai moi-même utilisés au fil de mon parcours, que je connais, qui se sont montrés fiables et performants — et avec qui vous pourrez avancer en confiance. Je transmets ces contacts sans aucun lien économique, en toute transparence.",
+    "tags": [
+      "Notaires",
+      "Experts-comptables",
+      "Avocats d'affaires",
+      "Avocats fiscalistes",
+      "Banques",
+      "Fonds d'investissement",
+      "Conseil en M&A",
+      "Conseil en stratégie",
+      "Financement de l'innovation",
+      "Recrutement & RH",
+      "Branding, web & SEO",
+      "Cabinets PI",
+      "BPIFrance",
+      "Boîtes de développement"
+    ],
+    "note": "Aucune commission, aucun lien commercial : seulement des contacts que j'ai moi-même éprouvés, partagés en toute honnêteté."
+  },
+  "brand": {
+    "mark": "JVG",
+    "name": "Jean-Victor Garnier"
+  },
+  "pourQui": {
+    "eyebrow": "Pour qui ?",
+    "title": "Un mentorat pensé pour les dirigeant·e·s qui veulent passer un cap.",
+    "cards": [
+      {
+        "title": "Dirigeant·e·s de PME & start-up",
+        "text": "Fondateurs et fondatrices, CEO et dirigeant·e·s qui pilotent la croissance de leur entreprise."
+      },
+      {
+        "title": "Tech & services aux entreprises",
+        "text": "Les secteurs de la tech et, plus largement, des services aux entreprises — mon terrain de jeu."
+      },
+      {
+        "title": "Majoritairement B2B",
+        "text": "Une dominante B2B, sans exclure les modèles B2C lorsqu'ils s'inscrivent dans cette dynamique."
+      }
+    ]
+  },
+  "parcours": {
+    "eyebrow": "Mon parcours entrepreneurial",
+    "title": "Quinze ans à construire une entreprise, de la première embauche à la cession.",
+    "stats": [
+      {
+        "value": "37 M€",
+        "label": "Chiffre d'affaires"
+      },
+      {
+        "value": "~12 %",
+        "label": "EBITDA"
+      },
+      {
+        "value": "300–350",
+        "label": "Collaborateurs"
+      },
+      {
+        "value": "1 → 350",
+        "label": "En 15 ans"
+      },
+      {
+        "value": "2007–2021",
+        "label": "À la barre"
+      }
+    ],
+    "facets": [
+      {
+        "num": "01",
+        "title": "Création & développement",
+        "text": "Bâtir une ESN à partir d'un seul salarié et la faire grandir jusqu'à plus de 350 collaborateurs, à toutes les étapes de maturité."
+      },
+      {
+        "num": "02",
+        "title": "Développement international",
+        "text": "Ouvrir l'entreprise à l'international et structurer son déploiement au-delà des frontières."
+      },
+      {
+        "num": "03",
+        "title": "Croissances externes",
+        "text": "Identifier, négocier et intégrer des acquisitions pour accélérer la croissance."
+      },
+      {
+        "num": "04",
+        "title": "LBO",
+        "text": "Mener une opération de LBO et piloter l'entreprise dans une logique de création de valeur actionnariale."
+      },
+      {
+        "num": "05",
+        "title": "Cession à un groupe coté",
+        "text": "Conclure la cession de l'entreprise à un groupe français coté — l'aboutissement d'un cycle entrepreneurial complet."
+      }
+    ]
+  },
+  "temoignages": {
+    "eyebrow": "Témoignages",
+    "title": "Ils ont avancé à mes côtés.",
+    "intro": "La parole à celles et ceux que j'ai accompagnés.",
+    "items": [
+      {
+        "quote": "Témoignage à venir. Cet espace accueillera le retour d'un·e dirigeant·e accompagné·e par Jean-Victor.",
+        "name": "Prénom Nom",
+        "role": "Fonction · Entreprise"
+      },
+      {
+        "quote": "Témoignage à venir. Cet espace accueillera le retour d'un·e dirigeant·e accompagné·e par Jean-Victor.",
+        "name": "Prénom Nom",
+        "role": "Fonction · Entreprise"
+      },
+      {
+        "quote": "Témoignage à venir. Cet espace accueillera le retour d'un·e dirigeant·e accompagné·e par Jean-Victor.",
+        "name": "Prénom Nom",
+        "role": "Fonction · Entreprise"
+      }
+    ]
+  },
+  "domaines": {
+    "eyebrow": "Domaines de coaching",
+    "title": "Couvrir chaque dimension de votre aventure entrepreneuriale.",
+    "intro": "De la première question à se poser avant de créer, jusqu'au pilotage fin de la croissance : un accompagnement complet, structuré par grands volets.",
+    "cards": [
+      {
+        "title": "Avant de se lancer",
+        "items": [
+          "Les bonnes questions à se poser avant de créer",
+          "Être entrepreneur et ses impacts (seul ou à plusieurs ?)",
+          "Association entre associés",
+          "Statuts & pacte, vision, mission, valeurs",
+          "Statut fiscal et social du dirigeant et rémunération",
+          "Choisir une bonne banque"
+        ]
+      },
+      {
+        "title": "Patrimonial du dirigeant",
+        "items": [
+          "Structuration juridique et patrimoniale",
+          "Bien détenir ses parts",
+          "Contrat de mariage",
+          "Vente et transmission futures"
+        ]
+      },
+      {
+        "title": "Offre & marché",
+        "items": [
+          "Proposition de valeur : produit, service, procédé",
+          "Roadmap produit",
+          "Marché cible : définition, taille, tendances",
+          "Étude de la concurrence & avantages concurrentiels",
+          "Stratégie d'acquisition (directe / indirecte)",
+          "Modèle économique & part de marché"
+        ]
+      },
+      {
+        "title": "Financer & piloter",
+        "items": [
+          "Financements publics et privés (dilutifs / non dilutifs)",
+          "Réussir sa levée de fonds & son pitch deck",
+          "CIR, CII, JEI, CIRCo",
+          "Prévisionnel financier & rentabilité",
+          "Plan de financement, compte de résultat, trésorerie",
+          "Tableau de bord de pilotage & KPI"
+        ]
+      },
+      {
+        "title": "Équipe",
+        "items": [
+          "Comment et où bien recruter ?",
+          "Management package : BSA, BSPCE, actions gratuites",
+          "Fidéliser les talents",
+          "Marque employeur & politique RSE",
+          "Contrat de travail, clauses et rémunération",
+          "Contraintes administratives et contrôles"
+        ]
+      },
+      {
+        "title": "PI & réglementaire",
+        "items": [
+          "Marques et noms de domaine",
+          "Brevets et dépôts de code",
+          "Secret des affaires",
+          "Cadre réglementaire"
+        ]
+      },
+      {
+        "title": "Croissance",
+        "items": [
+          "International : pourquoi y aller ?",
+          "International : comment (VIE…) ?",
+          "Croissance externe : cibler et négocier",
+          "Intégrer une acquisition"
+        ]
+      },
+      {
+        "title": "Système d'information & cybersécurité",
+        "items": [
+          "Kit de démarrage de votre SI",
+          "Préserver et sécuriser son SI",
+          "Bons réflexes de cybersécurité"
+        ]
+      },
+      {
+        "title": "Rayonner",
+        "items": [
+          "Personal branding & identité de marque",
+          "SEO, Google Ads, réseaux sociaux",
+          "Stratégie d'influence",
+          "Communication & marketing"
+        ]
+      },
+      {
+        "title": "L'humain",
+        "items": [
+          "Le sommeil, facteur de performance professionnelle",
+          "Le sport, moteur d'énergie et de clarté",
+          "Santé et bien-être du dirigeant",
+          "Tenir dans la durée"
+        ]
+      }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Mentorat",
+    "title": "L'expérience d'un dirigeant-entrepreneur au service de votre entreprise.",
+    "lead": "J'accompagne les dirigeant·e·s de PME et de start-up qui veulent franchir un cap avec une approche concrète fondée sur plus de 15 années d'expérience terrain.",
+    "ctaPrimary": {
+      "label": "Réserver un échange",
+      "href": "#contact"
+    },
+    "ctaGhost": {
+      "label": "Découvrir mon parcours",
+      "href": "#parcours"
+    },
+    "stats": [
+      {
+        "value": "1 → 350",
+        "label": "collaborateurs en 15 ans"
+      },
+      {
+        "value": "37 M€",
+        "label": "de chiffre d'affaires"
+      },
+      {
+        "value": "~12 %",
+        "label": "d'EBITDA"
+      },
+      {
+        "value": "2007–2021",
+        "label": "à la tête d'une ESN"
+      }
+    ]
   },
   "footer": {
     "tagline": "Jean-Victor Garnier — Mentorat & partage d'expérience pour entrepreneurs."
