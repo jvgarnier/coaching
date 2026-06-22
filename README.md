@@ -39,12 +39,11 @@ par email/mot de passe, sans compte GitHub requis pour les éditeurs.
    - Provider : **GitHub**, dépôt : `jvgarnier/coaching`, branche `main`
    - URL de login Decap : `https://<votre-site>.netlify.app/admin/`
    - Fournir un **access token** GitHub avec accès au dépôt (DecapBridge l'explique pas à pas)
-3. DecapBridge génère un bloc `backend:` avec un **identifiant de site**. Reporter cet
-   identifiant dans [`admin/config.yml`](admin/config.yml) en remplaçant `SITE_ID` dans
-   `identity_url: https://auth.decapbridge.com/sites/SITE_ID` (ou coller le bloc fourni
-   tel quel à la place du bloc `backend:` existant).
+3. DecapBridge génère un bloc `backend:` (auth PKCE) — déjà reporté dans
+   [`admin/config.yml`](admin/config.yml) (site `d4150dc3-…`).
 4. Dans DecapBridge, onglet **collaborators** → inviter Jean-Victor par email.
-5. Commiter/pousser la modif de `config.yml`, puis aller sur `https://<votre-site>.netlify.app/admin/`.
+5. Jean-Victor accepte l'invitation (définit son mot de passe), puis se connecte sur
+   `https://rad-palmier-6e3762.netlify.app/admin/` (ou le domaine OVH une fois branché).
 
 ### Tester l'admin en local (optionnel)
 
