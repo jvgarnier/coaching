@@ -97,4 +97,33 @@ window.initSiteInteractions = function () {
         });
     });
   }
+
+  /* ----- Carrousel témoignages (flèches latérales) ----- */
+  var track = document.getElementById("temoignages-items");
+  var prevBtn = document.getElementById("temoignages-prev");
+  var nextBtn = document.getElementById("temoignages-next");
+  if (track && prevBtn && nextBtn) {
+    var stepSize = function () {
+      var card = track.querySelector(".testimonial");
+      return card ? card.getBoundingClientRect().width + 24 : track.clientWidth;
+    };
+    var updateArrows = function () {
+      var scrollable = track.scrollWidth - track.clientWidth > 4;
+      prevBtn.hidden = !scrollable;
+      nextBtn.hidden = !scrollable;
+      if (scrollable) {
+        prevBtn.disabled = track.scrollLeft <= 2;
+        nextBtn.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+      }
+    };
+    prevBtn.addEventListener("click", function () {
+      track.scrollBy({ left: -stepSize(), behavior: "smooth" });
+    });
+    nextBtn.addEventListener("click", function () {
+      track.scrollBy({ left: stepSize(), behavior: "smooth" });
+    });
+    track.addEventListener("scroll", updateArrows, { passive: true });
+    window.addEventListener("resize", updateArrows);
+    updateArrows();
+  }
 };

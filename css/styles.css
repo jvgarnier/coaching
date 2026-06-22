@@ -313,7 +313,46 @@ h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 600; line-height
 }
 
 /* ---------- Témoignages ---------- */
-.testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.testimonials-carousel { position: relative; }
+.testimonials-grid {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 8px 4px 18px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.testimonials-grid::-webkit-scrollbar { display: none; }
+.testimonials-grid > .testimonial {
+  flex: 0 0 calc((100% - 48px) / 3);
+  scroll-snap-align: start;
+}
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1px solid var(--cream-200);
+  box-shadow: var(--shadow-md);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+  transition: background 0.25s, color 0.25s, opacity 0.25s;
+}
+.carousel-arrow:hover { background: var(--gold); color: var(--white); }
+.carousel-arrow[hidden] { display: none; }
+.carousel-arrow:disabled { opacity: 0.35; cursor: default; }
+.carousel-arrow:disabled:hover { background: var(--white); color: var(--navy); }
+.carousel-prev { left: -12px; }
+.carousel-next { right: -12px; }
 .testimonial {
   position: relative;
   margin: 0;
@@ -422,7 +461,8 @@ h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 600; line-height
 @media (max-width: 920px) {
   .mentor-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .mentor-portrait { max-width: 420px; margin: 0 auto; }
-  .facets-grid, .audience-grid, .domains-grid, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+  .facets-grid, .audience-grid, .domains-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid > .testimonial { flex-basis: calc((100% - 24px) / 2); }
   .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 32px 20px; }
   .stat-band { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; }
 }
@@ -450,7 +490,8 @@ h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 600; line-height
 
 @media (max-width: 560px) {
   body { font-size: 16px; }
-  .facets-grid, .audience-grid, .domains-grid, .testimonials-grid { grid-template-columns: 1fr; }
+  .facets-grid, .audience-grid, .domains-grid { grid-template-columns: 1fr; }
+  .testimonials-grid > .testimonial { flex-basis: 88%; }
   .hero-stats { grid-template-columns: 1fr 1fr; }
   .contact-form { padding: 26px; }
 }
