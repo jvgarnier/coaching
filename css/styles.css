@@ -313,7 +313,7 @@ h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 600; line-height
 }
 
 /* ---------- Témoignages ---------- */
-.testimonials-carousel { position: relative; }
+.testimonials-carousel { position: relative; padding: 0 72px; }
 .testimonials-grid {
   display: flex;
   gap: 24px;
@@ -351,8 +351,13 @@ h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 600; line-height
 .carousel-arrow[hidden] { display: none; }
 .carousel-arrow:disabled { opacity: 0.35; cursor: default; }
 .carousel-arrow:disabled:hover { background: var(--white); color: var(--navy); }
-.carousel-prev { left: -12px; }
-.carousel-next { right: -12px; }
+.carousel-prev { left: 8px; }
+.carousel-next { right: 8px; }
+@media (min-width: 1280px) {
+  .testimonials-carousel { padding: 0; }
+  .carousel-prev { left: -68px; }
+  .carousel-next { right: -68px; }
+}
 .testimonial {
   position: relative;
   margin: 0;
@@ -462,6 +467,7 @@ h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 600; line-height
   .mentor-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .mentor-portrait { max-width: 420px; margin: 0 auto; }
   .facets-grid, .audience-grid, .domains-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-carousel { padding: 0 68px; }
   .testimonials-grid > .testimonial { flex-basis: calc((100% - 24px) / 2); }
   .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 32px 20px; }
   .stat-band { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; }
@@ -491,7 +497,11 @@ h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 600; line-height
 @media (max-width: 560px) {
   body { font-size: 16px; }
   .facets-grid, .audience-grid, .domains-grid { grid-template-columns: 1fr; }
-  .testimonials-grid > .testimonial { flex-basis: 88%; }
+  .testimonials-carousel { padding: 0 52px; }
+  .carousel-arrow { width: 38px; height: 38px; }
+  .carousel-prev { left: 4px; }
+  .carousel-next { right: 4px; }
+  .testimonials-grid > .testimonial { flex-basis: 100%; }
   .hero-stats { grid-template-columns: 1fr 1fr; }
   .contact-form { padding: 26px; }
 }
