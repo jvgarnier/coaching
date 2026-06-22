@@ -30,7 +30,7 @@
   },
   "ecosysteme": {
     "eyebrow": "L'écosystème",
-    "title": "Les professionnels de mon écosystème* que j'ai éprouvés",
+    "title": "Un écosystème de professionnels éprouvé",
     "intro": "Je vous donne accès, en fonction de vos besoins, à l’écosystème de professionnels que j'ai moi-même utilisés au fil de mon parcours et qui se sont montrés fiables et performants. Vous pourrez avancer avec eux en confiance. ",
     "tags": [
       "Notaires",
@@ -56,7 +56,7 @@
   },
   "pourQui": {
     "eyebrow": "Pour qui ?",
-    "title": "Un mentorat pensé pour les dirigeant·e·s qui veulent passer un cap.",
+    "title": "Un mentorat pensé pour les dirigeant·e·s qui veulent passer un cap",
     "cards": [
       {
         "title": "Dirigeant·e·s de PME & start-up",
@@ -253,7 +253,7 @@
   },
   "hero": {
     "eyebrow": "Mentorat",
-    "title": "L'expérience d'un entrepreneur-dirigeant au service de votre entreprise.",
+    "title": "L'expérience d'un entrepreneur-dirigeant au service de votre entreprise",
     "lead": "J'accompagne les dirigeant·e·s de PME et de start-ups qui veulent franchir un cap grâce à une approche concrète fondée sur plus de 15 années d'expérience terrain.",
     "ctaPrimary": {
       "label": "Réserver un échange",
