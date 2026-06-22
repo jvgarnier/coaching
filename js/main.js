@@ -91,7 +91,7 @@ window.initSiteInteractions = function () {
             "Email : " + email + "\n\n" +
             message
           );
-          window.location.href = "mailto:contact@example.com?subject=" + subject + "&body=" + body;
+          window.location.href = "mailto:jvgarnier@gmail.com?subject=" + subject + "&body=" + body;
           feedback.textContent = "Votre messagerie va s'ouvrir pour finaliser l'envoi. Merci !";
           feedback.classList.add("ok");
         });
