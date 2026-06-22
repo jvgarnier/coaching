@@ -77,7 +77,7 @@
     "title": "Quinze ans à construire une entreprise, de la première embauche à la cession.",
     "stats": [
       {
-        "value": "37 M€",
+        "value": "35 M€",
         "label": "Chiffre d'affaires"
       },
       {
@@ -85,15 +85,11 @@
         "label": "EBITDA"
       },
       {
-        "value": "300–350",
+        "value": "+300",
         "label": "Collaborateurs"
       },
       {
-        "value": "1 → 350",
-        "label": "En 15 ans"
-      },
-      {
-        "value": "2007–2021",
+        "value": "2007–2022",
         "label": "À la barre"
       }
     ],
@@ -258,7 +254,7 @@
   },
   "hero": {
     "eyebrow": "Mentorat",
-    "title": "L'expérience d'un dirigeant-entrepreneur au service de votre entreprise.",
+    "title": "L'expérience d'un entrepreneur dirigeant au service de votre entreprise.",
     "lead": "J'accompagne les dirigeant·e·s de PME et de start-up qui veulent franchir un cap avec une approche concrète fondée sur plus de 15 années d'expérience terrain.",
     "ctaPrimary": {
       "label": "Réserver un échange",
