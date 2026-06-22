@@ -2,36 +2,36 @@
   "contact": {
     "eyebrow": "Entrons en contact",
     "title": "Réservons un premier échange.",
-    "text": "Un appel de découverte, sans engagement, pour comprendre vos enjeux et voir comment mon accompagnement peut accélérer votre trajectoire.",
+    "text": "Un appel de découverte, sans engagement, pour comprendre vos enjeux et envisager une collaboration.",
     "booking": {
       "title": "Prise de rendez-vous",
       "desc": "Choisissez directement un créneau dans mon agenda.",
       "calendarUrl": "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3MEhbbdOf0kFZHT5ncGEpPiIVYvevxo_2irdMG-7ghEPht9JzGF4B73u1wdCG8t01cMDgvZQ0g?gv=true"
     },
-    "email": "jvgarnier@gmail.com",
+    "email": "contact@example.com",
     "linkedin": {
       "label": "Profil à renseigner",
       "href": "#"
     }
   },
   "mentor": {
-    "eyebrow": "Le mentor",
-    "title": "Un entrepreneur qui a vécu chaque étape, à vos côtés.",
+    "eyebrow": "Un mentor à vos côtés",
+    "title": "Un entrepreneur qui a traversé chaque de la vie d'une entreprise",
     "image": "assets/jean-victor.jpg",
     "imageAlt": "Portrait de Jean-Victor Garnier",
     "paragraphs": [
-      "Pendant quinze ans, j'ai dirigé une entreprise de services du numérique (ESN) et l'ai menée de un à plus de 350 collaborateurs. J'ai affronté toutes les facettes du développement d'une société : la création, la structuration, la croissance, le financement, l'international, les acquisitions, jusqu'à la cession à un groupe coté.",
-      "Mon mentorat n'est pas théorique. Il vous apporte le recul d'un dirigeant qui a pris les mêmes décisions que vous, traversé les mêmes doutes, et qui met aujourd'hui cette expérience — et un écosystème éprouvé — au service de votre réussite."
+      "J’ai cofondé et dirigé pendant plus de quinze ans une entreprise de services du numérique (ESN), que j’ai menée de 1 à plus de 350 collaborateurs. De la création à la cession à un groupe coté, j’ai vécu les grandes étapes du développement d’une société : structuration, croissance, financement, internationalisation, acquisitions et transmission.",
+      "Mon accompagnement n’est pas théorique. Il s’appuie sur l’expérience concrète d’un dirigeant qui a pris des décisions structurantes, connu les moments de doute, s’est parfois trompé, construit un écosystème solide — et met aujourd’hui ce recul au service d’entrepreneur-e-s qui veulent franchir un cap."
     ],
     "cta": {
-      "label": "Échanger avec moi",
+      "label": "Réserver un échange",
       "href": "#contact"
     }
   },
   "ecosysteme": {
     "eyebrow": "L'écosystème",
-    "title": "Les partenaires que j'ai éprouvés, à vos côtés.",
-    "intro": "Je ne prétends pas vous présenter « les meilleurs du marché ». Je partage simplement les acteurs que j'ai moi-même utilisés au fil de mon parcours, que je connais, qui se sont montrés fiables et performants — et avec qui vous pourrez avancer en confiance. Je transmets ces contacts sans aucun lien économique, en toute transparence.",
+    "title": "Les professionnels de mon écosystème* que j'ai éprouvés",
+    "intro": "Je vous donne accès, en fonction de vos besoins, à l’écosystème de professionnels que j'ai moi-même utilisés au fil de mon parcours et qui se sont montrés fiables et performants. Vous pourrez avancer avec eux en confiance. ",
     "tags": [
       "Notaires",
       "Experts-comptables",
@@ -48,7 +48,7 @@
       "BPIFrance",
       "Boîtes de développement"
     ],
-    "note": "Aucune commission, aucun lien commercial : seulement des contacts que j'ai moi-même éprouvés, partagés en toute honnêteté."
+    "note": "*A noter que je ne dispose d’aucun lien commercial avec ces professionnels"
   },
   "brand": {
     "mark": "JVG",
@@ -74,7 +74,7 @@
   },
   "parcours": {
     "eyebrow": "Mon parcours entrepreneurial",
-    "title": "Quinze ans à construire une entreprise, de la première embauche à la cession.",
+    "title": "",
     "stats": [
       {
         "value": "35 M€",
@@ -112,7 +112,7 @@
       {
         "num": "04",
         "title": "LBO",
-        "text": "Mener une opération de LBO et piloter l'entreprise dans une logique de création de valeur actionnariale."
+        "text": "Mener une opération de LBO pour gagner en maturité et renforcer son capital."
       },
       {
         "num": "05",
@@ -150,7 +150,7 @@
   },
   "domaines": {
     "eyebrow": "Domaines de coaching",
-    "title": "Couvrir chaque dimension de votre aventure entrepreneuriale.",
+    "title": "Un mentorat pensé pour les dirigeant·e·s qui veulent avancer avec un vis-à-vis entrepreneurial.",
     "intro": "De la première question à se poser avant de créer, jusqu'au pilotage fin de la croissance : un accompagnement complet, structuré par grands volets.",
     "cards": [
       {
@@ -242,12 +242,11 @@
         ]
       },
       {
-        "title": "L'humain",
+        "title": "Santé et bien-être",
         "items": [
           "Le sommeil, facteur de performance professionnelle",
           "Le sport, moteur d'énergie et de clarté",
-          "Santé et bien-être du dirigeant",
-          "Tenir dans la durée"
+          "Equilibre vie pro-vie perso"
         ]
       }
     ]
@@ -255,7 +254,7 @@
   "hero": {
     "eyebrow": "Mentorat",
     "title": "L'expérience d'un entrepreneur dirigeant au service de votre entreprise.",
-    "lead": "J'accompagne les dirigeant·e·s de PME et de start-up qui veulent franchir un cap avec une approche concrète fondée sur plus de 15 années d'expérience terrain.",
+    "lead": "J'accompagne les dirigeant·e·s de PME et de start-ups qui veulent franchir un cap grâce à une approche concrète fondée sur plus de 15 années d'expérience terrain.",
     "ctaPrimary": {
       "label": "Réserver un échange",
       "href": "#contact"
