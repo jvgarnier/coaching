@@ -23,6 +23,9 @@
       "href": "#contact"
     }
   },
+  "nav": {
+    "cta": "Réserver un échange"
+  },
   "ecosysteme": {
     "eyebrow": "L'écosystème",
     "title": "Un écosystème de professionnels éprouvé",
@@ -145,7 +148,7 @@
   },
   "domaines": {
     "eyebrow": "Domaines d'intervention",
-    "title": "Un vis-à-vis externe pour vous accompagner sans vous juger",
+    "title": "Un vis-à-vis externe pour vous accompagner et non vous juger",
     "intro": "La première question à se poser avant de créer, jusqu'au pilotage fin de la croissance : un accompagnement complet, structuré par grands volets.",
     "cards": [
       {
@@ -262,8 +265,5 @@
   },
   "footer": {
     "tagline": "Jean-Victor Garnier — Mentorat & partage d'expérience pour entrepreneurs"
-  },
-  "nav": {
-    "cta": "Réserver un échange"
   }
 }
