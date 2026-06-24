@@ -52,8 +52,39 @@
       setText("brand-name", data.brand.name);
       setText("footer-mark", data.brand.mark);
     }
-    if (data.footer) setText("footer-tagline", data.footer.tagline);
-    if (data.nav) setText("nav-cta", data.nav.cta);
+    if (data.meta) {
+      if (data.meta.title) document.title = data.meta.title;
+      var metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc && data.meta.description) metaDesc.setAttribute("content", data.meta.description);
+    }
+    if (data.footer) {
+      setText("footer-tagline", data.footer.tagline);
+      setText("footer-copyright", data.footer.copyright);
+      var footerNav = document.getElementById("footer-nav");
+      if (footerNav && Array.isArray(data.footer.nav)) {
+        data.footer.nav.forEach(function(item) {
+          var a = document.createElement("a");
+          a.href = item.href;
+          a.textContent = item.label;
+          footerNav.appendChild(a);
+        });
+      }
+    }
+    if (data.nav) {
+      setText("nav-cta", data.nav.cta);
+      var navMenu = document.getElementById("nav-menu");
+      if (navMenu && Array.isArray(data.nav.items)) {
+        var ctaItem = navMenu.querySelector("li:last-child");
+        data.nav.items.forEach(function(item) {
+          var li = document.createElement("li");
+          var a = document.createElement("a");
+          a.href = item.href;
+          a.textContent = item.label;
+          li.appendChild(a);
+          navMenu.insertBefore(li, ctaItem);
+        });
+      }
+    }
 
     // --- Hero ---
     var hero = data.hero || {};
@@ -171,6 +202,21 @@
     setText("contact-eyebrow", contact.eyebrow);
     setText("contact-title", contact.title);
     setText("contact-text", contact.text);
+    if (contact.form) {
+      var f = contact.form;
+      setText("label-name", f.labelName);
+      setText("label-company", f.labelCompany);
+      setText("label-email", f.labelEmail);
+      setText("label-message", f.labelMessage);
+      setText("form-submit", f.submit);
+      window.formMessages = {
+        sending: f.msgSending,
+        success: f.msgSuccess,
+        errorRequired: f.msgErrorRequired,
+        errorEmail: f.msgErrorEmail,
+        fallback: f.msgFallback
+      };
+    }
     if (contact.booking) {
       setText("booking-title", contact.booking.title);
       setText("booking-desc", contact.booking.desc);

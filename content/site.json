@@ -1,12 +1,28 @@
 {
+  "meta": {
+    "title": "Jean-Victor Garnier — Mentorat & partage d'expérience pour entrepreneurs",
+    "description": "Jean-Victor Garnier accompagne les dirigeant·e·s de PME et start-up de la tech et des services aux entreprises. Un mentorat nourri par 15 ans à la tête d'une ESN passée de 1 à 350 collaborateurs, dans un esprit de partage d'expérience."
+  },
   "contact": {
     "eyebrow": "Entrons en contact",
-    "title": "",
+    "title": "Engager la conversation",
     "text": "Un appel de découverte, sans engagement, pour comprendre vos enjeux et envisager une collaboration.",
     "booking": {
       "title": "Prise de rendez-vous",
       "desc": "Choisissez directement un créneau dans mon agenda.",
       "calendarUrl": "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3MEhbbdOf0kFZHT5ncGEpPiIVYvevxo_2irdMG-7ghEPht9JzGF4B73u1wdCG8t01cMDgvZQ0g?gv=true"
+    },
+    "form": {
+      "labelName": "Nom complet",
+      "labelCompany": "Entreprise",
+      "labelEmail": "Email",
+      "labelMessage": "Votre projet, en quelques mots",
+      "submit": "Envoyer ma demande",
+      "msgSending": "Envoi en cours…",
+      "msgSuccess": "Merci ! Votre demande a bien été envoyée. Je reviens vers vous rapidement.",
+      "msgErrorRequired": "Merci de remplir votre nom, votre email et votre message.",
+      "msgErrorEmail": "L'adresse email ne semble pas valide.",
+      "msgFallback": "Une erreur s'est produite. Merci de réessayer ou de me contacter directement."
     }
   },
   "mentor": {
@@ -269,6 +285,26 @@
     "stats": []
   },
   "footer": {
-    "tagline": "Jean-Victor Garnier — Mentorat & partage d'expérience pour entrepreneurs"
+    "tagline": "Jean-Victor Garnier — Mentorat & partage d'expérience pour entrepreneurs",
+    "copyright": "Jean-Victor Garnier. Tous droits réservés.",
+    "nav": [
+      { "label": "Le mentor", "href": "#mentor" },
+      { "label": "Parcours", "href": "#parcours" },
+      { "label": "Domaines", "href": "#domaines" },
+      { "label": "Écosystème", "href": "#ecosysteme" },
+      { "label": "Témoignages", "href": "#temoignages" },
+      { "label": "Contact", "href": "#contact" }
+    ]
+  },
+  "nav": {
+    "cta": "Réserver un échange",
+    "items": [
+      { "label": "Le mentor", "href": "#mentor" },
+      { "label": "Parcours", "href": "#parcours" },
+      { "label": "Pour qui", "href": "#pour-qui" },
+      { "label": "Domaines", "href": "#domaines" },
+      { "label": "Écosystème", "href": "#ecosysteme" },
+      { "label": "Témoignages", "href": "#temoignages" }
+    ]
   }
 }

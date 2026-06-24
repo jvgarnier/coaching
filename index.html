@@ -33,12 +33,6 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="nav-menu" id="nav-menu">
-          <li><a href="#mentor">Le mentor</a></li>
-          <li><a href="#parcours">Parcours</a></li>
-          <li><a href="#pour-qui">Pour qui</a></li>
-          <li><a href="#domaines">Domaines</a></li>
-          <li><a href="#ecosysteme">Écosystème</a></li>
-          <li><a href="#temoignages">Témoignages</a></li>
           <li><a href="#contact" class="nav-cta" id="nav-cta">Réserver un échange</a></li>
         </ul>
       </nav>
@@ -157,43 +151,46 @@
 
     <!-- ====================== CONTACT ====================== -->
     <section class="section" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-text">
+      <div class="container">
+        <div class="section-head">
           <p class="eyebrow reveal" id="contact-eyebrow"></p>
           <h2 class="reveal" id="contact-title"></h2>
-          <p class="reveal" id="contact-text"></p>
+          <p class="section-intro reveal" id="contact-text"></p>
+        </div>
 
+        <div class="contact-layout">
           <div class="booking-placeholder reveal" id="booking">
             <p class="booking-title" id="booking-title"></p>
             <p class="booking-desc" id="booking-desc"></p>
             <div class="booking-embed" id="booking-embed"></div>
           </div>
-        </div>
 
-        <form class='contact-form reveal' id='contact-form' method='POST' name='contact' data-netlify='true' netlify-honeypot='bot-field' novalidate>
-          <input type="hidden" name="form-name" value="contact" />
+          <form class='contact-form reveal' id='contact-form' method='POST' name='contact' data-netlify='true' netlify-honeypot='bot-field' novalidate>
+          <input type="hidden" name="access_key" value="22e6da7b-297a-4c79-99e0-fdbfe90011fe" />
+          <input type="hidden" name="subject" value="Nouvelle demande de contact — JVG" />
           <p class="hp-field" aria-hidden="true">
             <label>Ne pas remplir : <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
           </p>
           <div class="field">
-            <label for="name">Nom complet</label>
+            <label for="name" id="label-name">Nom complet</label>
             <input type="text" id="name" name="name" autocomplete="name" required />
           </div>
           <div class="field">
-            <label for="company">Entreprise</label>
+            <label for="company" id="label-company">Entreprise</label>
             <input type="text" id="company" name="company" autocomplete="organization" />
           </div>
           <div class="field">
-            <label for="email">Email</label>
+            <label for="email" id="label-email">Email</label>
             <input type="email" id="email" name="email" autocomplete="email" required />
           </div>
           <div class="field">
-            <label for="message">Votre projet, en quelques mots</label>
+            <label for="message" id="label-message">Votre projet, en quelques mots</label>
             <textarea id="message" name="message" rows="4" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-block">Envoyer ma demande</button>
+          <button type="submit" class="btn btn-primary btn-block" id="form-submit">Envoyer ma demande</button>
           <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
         </form>
+        </div>
       </div>
     </section>
 
@@ -206,16 +203,9 @@
         <span class="brand-mark" id="footer-mark"></span>
         <p id="footer-tagline"></p>
       </div>
-      <nav class="footer-nav" aria-label="Pied de page">
-        <a href="#mentor">Le mentor</a>
-        <a href="#parcours">Parcours</a>
-        <a href="#domaines">Domaines</a>
-        <a href="#ecosysteme">Écosystème</a>
-        <a href="#temoignages">Témoignages</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <nav class="footer-nav" id="footer-nav" aria-label="Pied de page"></nav>
       <p class="footer-legal">
-        © <span id="year"></span> Jean-Victor Garnier. Tous droits réservés.
+        © <span id="year"></span> <span id="footer-copyright">Jean-Victor Garnier. Tous droits réservés.</span>
         <a href="mentions-legales.html">Mentions légales</a>
         <a href="confidentialite.html">Politique de confidentialité</a>
       </p>

@@ -44,6 +44,13 @@ collections:
         editor:
           preview: false
         fields:
+          - label: "SEO (titre & description)"
+            name: "meta"
+            widget: "object"
+            fields:
+              - { label: "Titre de la page", name: "title", widget: "string" }
+              - { label: "Description (meta)", name: "description", widget: "text" }
+
           - label: "Marque"
             name: "brand"
             widget: "object"
@@ -56,6 +63,12 @@ collections:
             widget: "object"
             fields:
               - { label: "Bouton d'action (ex. Réserver un échange)", name: "cta", widget: "string" }
+              - label: "Liens du menu"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Libellé", name: "label", widget: "string" }
+                  - { label: "Lien (ancre, ex. #mentor)", name: "href", widget: "string" }
 
           - label: "Hero (haut de page)"
             name: "hero"
@@ -194,9 +207,30 @@ collections:
                   - { label: "Titre", name: "title", widget: "string" }
                   - { label: "Description", name: "desc", widget: "text" }
                   - { label: "Lien d'intégration de l'agenda Google", name: "calendarUrl", widget: "string" }
+              - label: "Formulaire de contact"
+                name: "form"
+                widget: "object"
+                fields:
+                  - { label: "Label champ Nom", name: "labelName", widget: "string" }
+                  - { label: "Label champ Entreprise", name: "labelCompany", widget: "string" }
+                  - { label: "Label champ Email", name: "labelEmail", widget: "string" }
+                  - { label: "Label champ Message", name: "labelMessage", widget: "string" }
+                  - { label: "Texte du bouton d'envoi", name: "submit", widget: "string" }
+                  - { label: "Message — envoi en cours", name: "msgSending", widget: "string" }
+                  - { label: "Message — succès", name: "msgSuccess", widget: "text" }
+                  - { label: "Message — champs manquants", name: "msgErrorRequired", widget: "string" }
+                  - { label: "Message — email invalide", name: "msgErrorEmail", widget: "string" }
+                  - { label: "Message — repli messagerie", name: "msgFallback", widget: "string" }
 
           - label: "Pied de page"
             name: "footer"
             widget: "object"
             fields:
               - { label: "Phrase de pied de page", name: "tagline", widget: "text" }
+              - { label: "Texte du copyright (après ©)", name: "copyright", widget: "string" }
+              - label: "Liens de navigation du pied de page"
+                name: "nav"
+                widget: "list"
+                fields:
+                  - { label: "Libellé", name: "label", widget: "string" }
+                  - { label: "Lien (ancre, ex. #mentor)", name: "href", widget: "string" }

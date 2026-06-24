@@ -55,45 +55,39 @@ window.initSiteInteractions = function () {
       var email = form.email.value.trim();
       var message = form.message.value.trim();
 
+      var msgs = window.formMessages || {};
+      var msgRequired = msgs.errorRequired || "Merci de remplir votre nom, votre email et votre message.";
+      var msgEmail    = msgs.errorEmail    || "L'adresse email ne semble pas valide.";
+      var msgSending  = msgs.sending       || "Envoi en cours…";
+      var msgSuccess  = msgs.success       || "Merci ! Votre demande a bien été envoyée. Je reviens vers vous rapidement.";
+      var msgFallback = msgs.fallback      || "Votre messagerie va s'ouvrir pour finaliser l'envoi. Merci !";
+
       if (!name || !email || !message) {
-        feedback.textContent = "Merci de remplir votre nom, votre email et votre message.";
+        feedback.textContent = msgRequired;
         feedback.classList.add("err");
         return;
       }
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        feedback.textContent = "L'adresse email ne semble pas valide.";
+        feedback.textContent = msgEmail;
         feedback.classList.add("err");
         return;
       }
 
-      // Construit le corps attendu par Netlify Forms (form-name + tous les champs).
-      var data = new URLSearchParams(new FormData(form)).toString();
-
-      feedback.textContent = "Envoi en cours…";
-      fetch("/", {
+      feedback.textContent = msgSending;
+      fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: data,
+        body: new FormData(form),
       })
-        .then(function (res) {
-          if (!res.ok) throw new Error("HTTP " + res.status);
-          feedback.textContent = "Merci ! Votre demande a bien été envoyée. Je reviens vers vous rapidement.";
+        .then(function (res) { return res.json(); })
+        .then(function (json) {
+          if (!json.success) throw new Error(json.message);
+          feedback.textContent = msgSuccess;
           feedback.classList.add("ok");
           form.reset();
         })
         .catch(function () {
-          // Repli : en local (ou si Netlify Forms indisponible), on ouvre la messagerie.
-          var company = form.company.value.trim();
-          var subject = encodeURIComponent("Demande d'échange — " + name);
-          var body = encodeURIComponent(
-            "Nom : " + name + "\n" +
-            "Entreprise : " + (company || "—") + "\n" +
-            "Email : " + email + "\n\n" +
-            message
-          );
-          window.location.href = "mailto:jvgarnier@gmail.com?subject=" + subject + "&body=" + body;
-          feedback.textContent = "Votre messagerie va s'ouvrir pour finaliser l'envoi. Merci !";
-          feedback.classList.add("ok");
+          feedback.textContent = msgFallback;
+          feedback.classList.add("err");
         });
     });
   }
