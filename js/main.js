@@ -105,7 +105,11 @@ window.initSiteInteractions = function () {
   if (track && prevBtn && nextBtn) {
     var stepSize = function () {
       var card = track.querySelector(".testimonial");
-      return card ? card.getBoundingClientRect().width + 24 : track.clientWidth;
+      if (!card) return track.clientWidth;
+      var cardW = card.getBoundingClientRect().width + 24;
+      // défile d'un bloc = nombre de cartes visibles (3 sur desktop, 2 tablette, 1 mobile)
+      var visible = Math.max(1, Math.round(track.clientWidth / cardW));
+      return visible * cardW;
     };
     var updateArrows = function () {
       var scrollable = track.scrollWidth - track.clientWidth > 4;

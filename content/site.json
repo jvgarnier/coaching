@@ -7,11 +7,6 @@
       "title": "Prise de rendez-vous",
       "desc": "Choisissez directement un créneau dans mon agenda.",
       "calendarUrl": "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3MEhbbdOf0kFZHT5ncGEpPiIVYvevxo_2irdMG-7ghEPht9JzGF4B73u1wdCG8t01cMDgvZQ0g?gv=true"
-    },
-    "email": "jvgarnier@gmail.com",
-    "linkedin": {
-      "label": "06 62 86 33 68",
-      "href": "Linkedin"
     }
   },
   "mentor": {
@@ -267,5 +262,8 @@
   },
   "footer": {
     "tagline": "Jean-Victor Garnier — Mentorat & partage d'expérience pour entrepreneurs"
+  },
+  "nav": {
+    "cta": "Réserver un échange"
   }
 }

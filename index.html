@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/styles.css?v=3" />
+  <link rel="stylesheet" href="css/styles.css?v=11" />
   <!-- build: build-check-5e31d9dx -->
 </head>
 <body>
@@ -19,10 +19,14 @@
   <!-- ====================== HEADER / NAV ====================== -->
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a href="#top" class="brand" aria-label="Jean-Victor Garnier — accueil">
-        <span class="brand-mark" id="brand-mark"></span>
-        <span class="brand-name" id="brand-name"></span>
-      </a>
+      <div class="brand">
+        <a href="https://www.linkedin.com/in/jean-victor-garnier-a681671/" target="_blank" rel="noopener noreferrer" class="brand-mark" aria-label="Profil LinkedIn de Jean-Victor Garnier">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+            <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/>
+          </svg>
+        </a>
+        <a href="#top" class="brand-name" id="brand-name" aria-label="Jean-Victor Garnier — accueil"></a>
+      </div>
 
       <nav class="nav" aria-label="Navigation principale">
         <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
@@ -35,7 +39,7 @@
           <li><a href="#domaines">Domaines</a></li>
           <li><a href="#ecosysteme">Écosystème</a></li>
           <li><a href="#temoignages">Témoignages</a></li>
-          <li><a href="#contact" class="nav-cta">Réserver un échange</a></li>
+          <li><a href="#contact" class="nav-cta" id="nav-cta">Réserver un échange</a></li>
         </ul>
       </nav>
     </div>
@@ -164,11 +168,6 @@
             <p class="booking-desc" id="booking-desc"></p>
             <div class="booking-embed" id="booking-embed"></div>
           </div>
-
-          <ul class="contact-coords reveal">
-            <li><span>Email</span><a id="contact-email" href="mailto:contact@example.com"></a></li>
-            <li><span>LinkedIn</span><a id="contact-linkedin" href="#"></a></li>
-          </ul>
         </div>
 
         <form class='contact-form reveal' id='contact-form' method='POST' name='contact' data-netlify='true' netlify-honeypot='bot-field' novalidate>
@@ -215,11 +214,15 @@
         <a href="#temoignages">Témoignages</a>
         <a href="#contact">Contact</a>
       </nav>
-      <p class="footer-legal">© <span id="year"></span> Jean-Victor Garnier. Tous droits réservés.</p>
+      <p class="footer-legal">
+        © <span id="year"></span> Jean-Victor Garnier. Tous droits réservés.
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Politique de confidentialité</a>
+      </p>
     </div>
   </footer>
 
-  <script src="js/main.js?v=3"></script>
-  <script src="js/render.js?v=3"></script>
+  <script src="js/main.js?v=5"></script>
+  <script src="js/render.js?v=10"></script>
 </body>
 </html>

@@ -53,6 +53,7 @@
       setText("footer-mark", data.brand.mark);
     }
     if (data.footer) setText("footer-tagline", data.footer.tagline);
+    if (data.nav) setText("nav-cta", data.nav.cta);
 
     // --- Hero ---
     var hero = data.hero || {};
@@ -184,12 +185,6 @@
         embed.appendChild(iframe);
       }
     }
-    var emailEl = $("contact-email");
-    if (emailEl && contact.email) {
-      emailEl.textContent = contact.email;
-      emailEl.setAttribute("href", "mailto:" + contact.email);
-    }
-    setLink("contact-linkedin", contact.linkedin);
   }
 
   function start() {

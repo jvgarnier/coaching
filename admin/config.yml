@@ -51,6 +51,12 @@ collections:
               - { label: "Sigle (ex. JVG)", name: "mark", widget: "string" }
               - { label: "Nom complet", name: "name", widget: "string" }
 
+          - label: "Navigation (en-tête)"
+            name: "nav"
+            widget: "object"
+            fields:
+              - { label: "Bouton d'action (ex. Réserver un échange)", name: "cta", widget: "string" }
+
           - label: "Hero (haut de page)"
             name: "hero"
             widget: "object"
@@ -188,13 +194,6 @@ collections:
                   - { label: "Titre", name: "title", widget: "string" }
                   - { label: "Description", name: "desc", widget: "text" }
                   - { label: "Lien d'intégration de l'agenda Google", name: "calendarUrl", widget: "string" }
-              - { label: "Email", name: "email", widget: "string" }
-              - label: "LinkedIn"
-                name: "linkedin"
-                widget: "object"
-                fields:
-                  - { label: "Libellé", name: "label", widget: "string" }
-                  - { label: "Lien", name: "href", widget: "string" }
 
           - label: "Pied de page"
             name: "footer"
