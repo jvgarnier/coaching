@@ -143,6 +143,11 @@
         "quote": "Témoignage à venir. Cet espace accueillera le retour d'un·e dirigeant·e accompagné·e par Jean-Victor.",
         "name": "Prénom Nom",
         "role": "Fonction · Entreprise"
+      },
+      {
+        "quote": "\nTémoignage à venir. Cet espace accueillera le retour d'un·e dirigeant·e accompagné·e par Jean-Victor.",
+        "name": "Prénom Nom",
+        "role": "Fonction . Entreprise"
       }
     ]
   },
