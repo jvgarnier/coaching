@@ -1,8 +1,4 @@
 {
-  "meta": {
-    "title": "Jean-Victor Garnier — Mentorat & partage d'expérience pour entrepreneurs",
-    "description": "Jean-Victor Garnier accompagne les dirigeant·e·s de PME et start-up de la tech et des services aux entreprises. Un mentorat nourri par 15 ans à la tête d'une ESN passée de 1 à 350 collaborateurs, dans un esprit de partage d'expérience."
-  },
   "contact": {
     "eyebrow": "Entrons en contact",
     "title": "Engager la conversation",
@@ -13,16 +9,16 @@
       "calendarUrl": "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3MEhbbdOf0kFZHT5ncGEpPiIVYvevxo_2irdMG-7ghEPht9JzGF4B73u1wdCG8t01cMDgvZQ0g?gv=true"
     },
     "form": {
-      "labelName": "Nom complet",
-      "labelCompany": "Entreprise",
+      "msgSuccess": "Merci ! Votre demande a bien été envoyée. Je reviens vers vous rapidement.",
+      "msgFallback": "Une erreur s'est produite. Merci de réessayer ou de me contacter directement.",
+      "msgErrorRequired": "Merci de remplir votre nom, votre email et votre message.",
       "labelEmail": "Email",
+      "labelCompany": "Entreprise",
       "labelMessage": "Votre projet, en quelques mots",
+      "msgErrorEmail": "L'adresse email ne semble pas valide.",
       "submit": "Envoyer ma demande",
       "msgSending": "Envoi en cours…",
-      "msgSuccess": "Merci ! Votre demande a bien été envoyée. Je reviens vers vous rapidement.",
-      "msgErrorRequired": "Merci de remplir votre nom, votre email et votre message.",
-      "msgErrorEmail": "L'adresse email ne semble pas valide.",
-      "msgFallback": "Une erreur s'est produite. Merci de réessayer ou de me contacter directement."
+      "labelName": "Nom complet"
     }
   },
   "mentor": {
@@ -40,7 +36,37 @@
     }
   },
   "nav": {
-    "cta": "Réserver un échange"
+    "cta": "Engager la conversation",
+    "items": [
+      {
+        "label": "Le mentor",
+        "href": "#mentor"
+      },
+      {
+        "label": "Parcours",
+        "href": "#parcours"
+      },
+      {
+        "label": "Pour qui",
+        "href": "#pour-qui"
+      },
+      {
+        "label": "Domaines",
+        "href": "#domaines"
+      },
+      {
+        "label": "Écosystème",
+        "href": "#ecosysteme"
+      },
+      {
+        "label": "Témoignages",
+        "href": "#temoignages"
+      }
+    ]
+  },
+  "meta": {
+    "title": "Jean-Victor Garnier — Mentorat & partage d'expérience pour entrepreneurs",
+    "description": "Jean-Victor Garnier accompagne les dirigeant·e·s de PME et start-up de la tech et des services aux entreprises. Un mentorat nourri par 15 ans à la tête d'une ESN passée de 1 à 350 collaborateurs, dans un esprit de partage d'expérience."
   },
   "ecosysteme": {
     "eyebrow": "L'écosystème",
@@ -288,23 +314,30 @@
     "tagline": "Jean-Victor Garnier — Mentorat & partage d'expérience pour entrepreneurs",
     "copyright": "Jean-Victor Garnier. Tous droits réservés.",
     "nav": [
-      { "label": "Le mentor", "href": "#mentor" },
-      { "label": "Parcours", "href": "#parcours" },
-      { "label": "Domaines", "href": "#domaines" },
-      { "label": "Écosystème", "href": "#ecosysteme" },
-      { "label": "Témoignages", "href": "#temoignages" },
-      { "label": "Contact", "href": "#contact" }
-    ]
-  },
-  "nav": {
-    "cta": "Réserver un échange",
-    "items": [
-      { "label": "Le mentor", "href": "#mentor" },
-      { "label": "Parcours", "href": "#parcours" },
-      { "label": "Pour qui", "href": "#pour-qui" },
-      { "label": "Domaines", "href": "#domaines" },
-      { "label": "Écosystème", "href": "#ecosysteme" },
-      { "label": "Témoignages", "href": "#temoignages" }
+      {
+        "label": "Le mentor",
+        "href": "#mentor"
+      },
+      {
+        "label": "Parcours",
+        "href": "#parcours"
+      },
+      {
+        "label": "Domaines",
+        "href": "#domaines"
+      },
+      {
+        "label": "Écosystème",
+        "href": "#ecosysteme"
+      },
+      {
+        "label": "Témoignages",
+        "href": "#temoignages"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
     ]
   }
 }
